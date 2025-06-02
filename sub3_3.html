@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
+    <title>sub3</title>
     <style>
         *{
             box-sizing: border-box;
@@ -17,7 +17,6 @@
         ul{
             list-style-type: none;
         }
-
         #header{
             height: 120px;
             padding-bottom: 20px;
@@ -46,7 +45,7 @@
         }
 
         #main{
-            margin: 100px 100px;
+            margin: 50px 100px;
             clear: both;
         }
         #main::after{
@@ -54,48 +53,56 @@
             display: block;
             clear: both;
         }
-        #column{
-            padding: 0 30px;
-        }
-        #column img{
+        #leftcolumn{
             float: left;
-            padding-right: 20px;
+            width: 20%;
         }
-        #card{
+        #rightcolumn{
             float: left;
-            width: 280px;
-            border: dotted 5px #456E2A;
-            margin: 30px 0 0 20px;
+            width: 80%;
         }
-        #card h2{
-            text-align: center;
+        .card{
+            float: left;
+            padding-right: 30px;
+            border-right: solid 3px #FF8E8E;
         }
-        #card li{
-            list-style-image: url("img/dot.png");
-            padding: 5px;
+        .card li{
+            padding: 10px;
         }
-        #card li span{
-            font-size: 20px;
-            font-weight: bold;
-            text-decoration: underline;
+        .card li a:link{
+            color: #456E2A;
+            text-decoration: none;
+        }
+        .card li a:visited{
             color: #FF8E8E;
         }
-        #sub_column{
-            padding-top: 80px;
+        .card_l{
+            float: left;
+            margin-bottom: 10px;
+        }
+        .qna_l{
+            width: 520px;
+            float: left;
+            margin: 0 0 100px 20px;
+        }
+        .qna_r{
+            width: 500px;
+            float: left;
+            margin: 0 0 80px 150px;
+        }
+        .qna_l h2, .qna_r h2{
+            color: #456E2A;
+        }
+        .clear{
             clear: both;
         }
-        #sub_column img{
-            padding-left: 10px;
-        }
-
         #footer{
             border-top: solid 5px #cccccc;
             clear: both;
             padding: 10px;
             text-align: center;
         }
-
-            @media only screen and (max-width: 768px) {
+        @media only screen and (max-width: 768px) {
       #leftcolumn,
       #rightcolumn {
         float: none;
@@ -107,40 +114,40 @@
 </head>
 <body>
     <div id="header">
-        <img id="logo" src="img/logo.png">
+        <a href="index.html"><img id="logo" src="img/logo.png"></a>
         <img id="moto" src="img/moto.png">
         <ul id="top_menu">
             <li><a href="sub1.html">기니위키 |</a></li>
             <li><a href="sub2.html">기니듀스 101 |</a></li>
-            <li><a href="sub3.html">기니에게 물어봐 |</a></li>
+            <li><a href="sub3.html"><b>기니에게 물어봐</b> |</a></li>
             <li><a href="sub4.html">뿌이뿌이 모루카 |</a></li>
             <li><a href="sub5.html">기니운세</a></li>
         </ul>
     </div>
 
     <div id="main">
-        <div id="column">
-            <img src="img/main.png">
-            <img src="img/main_img.png">
-            <div id="card">
-                <h2>기니피그의 효능</h2>
+        <div id="leftcolumn">
+            <div class="card">
                 <ul>
-                    <li><span>당뇨예방</span><br>
-                        보는 것만으로도 혈당감소!</li>
-                    <li><span>다이어트효과</span><br>
-                        쓰다듬기 1회에 200kcal 소모!</li>
-                    <li><span>독심술</span><br>
-                        눈을 마주치면 모든 걸<br>
-                        간파당할 수 있다!</li>
+                <li><a href="sub3.html">▶ 유의 사항</a></li>
+                <li><a href="sub3_1.html">▶ 질병</a></li>
+                <li><a href="sub3_2.html">▶ 감정 표현</a></li>
+                <li><a href="sub3_3.html">▶ 기타 질문</a></li>
                 </ul>
-            </div>  
+            </div>
         </div>
-        <div id="sub_column">
-            <a href="sub1.html"><img src="img/sub1.png"></a>
-            <a href="sub2.html"><img src="img/sub2.png"></a>
-            <a href="sub3.html"><img src="img/sub3.png"></a>
-            <a href="sub4.html"><img src="img/sub4.png"></a>
-            <a href="sub5.html"><img src="img/sub5.png"></a>
+        <div id="rightcolumn">
+            <div class="card_l">
+                <img src="img/sub3img.png">
+            </div>
+            <div class="qna_l">
+                <h2>기타 질문사항들을 남겨주시면 답변해드립니다!</h2>
+            </div>
+            <div class="clear"></div>
+            <div class="qna_r">
+                <textarea rows="20" cols="80"></textarea>
+                <button type="submit">확인</button>
+            </div>
         </div>
     </div>
 

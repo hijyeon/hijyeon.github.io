@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sub3_1</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: "맑은 고딕";
+            font-size: 100%;
+            color: #666666;
+            padding: 30px 100px;
+        }
+        ul{
+            list-style-type: none;
+        }
+        #header{
+            height: 120px;
+            padding-bottom: 20px;
+            border-bottom: solid 5px #cccccc;
+        }
+        #logo{
+            float: left;
+        }
+        #moto{
+            float: left;
+            margin-top: 25px;
+        }
+        #top_menu{
+            float: right;
+            margin-top: 50px;
+        }
+        #top_menu li{
+            display: inline;
+        }
+        #top_menu li a:link{
+            color: #456E2A;
+            text-decoration: none;
+        }
+        #top_menu li a:visited{
+            color: #FF8E8E;
+        }
+
+        #main{
+            margin: 50px 100px;
+            clear: both;
+        }
+        #main::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        #leftcolumn{
+            float: left;
+            width: 20%;
+        }
+        #rightcolumn{
+            float: left;
+            width: 80%;
+        }
+        .card{
+            float: left;
+            padding-right: 30px;
+            border-right: solid 3px #FF8E8E;
+        }
+        .card li{
+            padding: 10px;
+        }
+        .card li a:link{
+            color: #456E2A;
+            text-decoration: none;
+        }
+        .card li a:visited{
+            color: #FF8E8E;
+        }
+        .card_l{
+            float: left;
+            margin-bottom: 10px;
+        }
+        .card_r{
+            float: right;
+            margin-bottom: 10px;
+        }
+        .qna_l{
+            width: 500px;
+            float: left;
+            margin: 0 0 80px 20px;
+        }
+        .qna_r{
+            width: 550px;
+            float: left;
+            margin: 0 0 80px 100px;
+        }
+        .qna_l h2, .qna_r h2{
+            color: #456E2A;
+        }
+        .qna_l li, .qna_r li{
+            list-style-image: url("img/dot.png");
+        }
+
+        .clear{
+            clear: both;
+        }
+        #footer{
+            border-top: solid 5px #cccccc;
+            clear: both;
+            padding: 10px;
+            text-align: center;
+        }
+        @media only screen and (max-width: 768px) {
+      #leftcolumn,
+      #rightcolumn {
+        float: none;
+        width: 100%;
+        margin: 0;
+      }
+    }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <a href="index.html"><img id="logo" src="img/logo.png"></a>
+        <img id="moto" src="img/moto.png">
+        <ul id="top_menu">
+            <li><a href="sub1.html">기니위키 |</a></li>
+            <li><a href="sub2.html">기니듀스 101 |</a></li>
+            <li><a href="sub3.html"><b>기니에게 물어봐</b> |</a></li>
+            <li><a href="sub4.html">뿌이뿌이 모루카 |</a></li>
+            <li><a href="sub5.html">기니운세</a></li>
+        </ul>
+    </div>
+
+    <div id="main">
+        <div id="leftcolumn">
+            <div class="card">
+                <ul>
+                <li><a href="sub3.html">▶ 유의 사항</a></li>
+                <li><a href="sub3_1.html">▶ 질병</a></li>
+                <li><a href="sub3_2.html">▶ 감정 표현</a></li>
+                <li><a href="sub3_3.html">▶ 기타 질문</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="rightcolumn">
+            <div class="card_l">
+                <img src="img/sub3img.png">
+            </div>
+            <div class="qna_l">
+                <h2>건강한 기니피그의 특징</h2>
+                <ul>
+                    <li>활동적이고 코 주변, 귀, 눈이 깨끗하고 털가죽에 비어 있는 부분이 없다.</li>
+                    <li>소변은 맑은 색이며 대변은 갈색이나 검은색의 타원형이다.</li>
+                    <li>가끔 녹색빛을 띄는 부드러운 변을 보기도 하는데 이는 기니피그가 먹는 소화가 덜된 식변이며 정상적인 현상이다</li>
+                </ul>
+            </div>
+            <div class="qna_r">
+                <h2>아픈 기니피그의 특징</h2>
+                <ul>
+                    <li>코 주변의 털이 빠지고 코 주변이 젖어 있거나 혹같은 것이 보인다.</li>
+                    <li>흐릿하거나 푹 들어가거나 심하게 많이 튀어나온 눈을 하고 있다.</li>
+                    <li>걸을 때 머리가 한쪽으로 쏠린다. 귀 밖에 하얀 각질이 생긴다.</li>
+                </ul>
+            </div>
+            <div class="card_r">
+                <img src="img/sub3img_.png">
+            </div>
+            <div class="clear"></div>
+            <div class="card_l">
+                <img src="img/sub3img.png">
+            </div>
+            <div class="qna_l">
+                <h2>칼슘과다, 요로결석</h2>
+                칼슘함량이 높은 건초, 야채, 사료를 너무 많이 지속적으로 섭취하면 발생한다. 불투명한 오줌을 싸는데 마르면 하얀 가루가 생긴다. 이 상태가 지속되면 요로결석으로 발전한다.<br>
+                요로결석이 생기면 소변을 보는 것을 매우 고통스러워하고 혈뇨가 나오기도 한다. 백색뇨 단계에서 막는 것이 가장 좋지만 요로결석이 발병했을 때에도 초기라면 약물치료만으로 호전시킬 수 있다. 
+            </div>
+            <div class="qna_r">
+                <h2>고창증</h2>
+                배 안이 가스와 물로 꽉 차서 아파하고 밥을 먹지 않는다. 배를 만져보면 아주 단단하다. 호흡에도 어려움을 겪는다. 잘못된 야채 급여, 스트레스, 바이러스 감염이 원인이며 배를 따뜻하게 해주고 가볍게 마사지 해주는 것으로 개선시킬 수 있다. 그러나 상태가 개선되지 않고 지속적인 증상을 보인다면 반드시 동물병원으로 가야한다. 고창증은 기니피그를 죽일 수도 있는 무서운 질병이다
+            </div>
+            <div class="card_r">
+                <img src="img/sub3img_.png">
+            </div>
+            <div class="clear"></div>
+             <div class="card_l">
+                <img src="img/sub3img.png">
+            </div>
+            <div class="qna_l">
+                <h2>암</h2>
+                식욕이 없거나 몸무게가 줄어들고 우울해보이거나 움직임이 없다. 몸에 혹이 보이기도 한다. 나이가 많거나 바이러스에 감염되었을 때, 암에 걸렸을 때 나타나는 증상이다. 암이라면 동물병원에서 외과적인 치료로 제거해야 한다.
+            </div>
+            <div class="qna_r">
+                <h2>백내장</h2>
+                흐릿하고 탁한 눈을 하고 있다. 설탕의 섭취량이 너무 많거나 단백질이 부족할 때, 우유를 마셨을 때 나타난다. 제대로 된 치료법이 없으므로 반드시 먹는 것을 조절해야 한다.
+            </div>
+            <div class="card_r">
+                <img src="img/sub3img_.png">
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        제작자: 202235238 김지현
+    </div>
+</body>
+</html>

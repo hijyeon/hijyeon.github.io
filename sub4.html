@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sub4</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: "맑은 고딕";
+            font-size: 100%;
+            color: #666666;
+            padding: 30px 100px;
+        }
+        ul{
+            list-style-type: none;
+        }
+        #header{
+            height: 120px;
+            padding-bottom: 20px;
+            border-bottom: solid 5px #cccccc;
+        }
+        #logo{
+            float: left;
+        }
+        #moto{
+            float: left;
+            margin-top: 25px;
+        }
+        #top_menu{
+            float: right;
+            margin-top: 50px;
+        }
+        #top_menu li{
+            display: inline;
+        }
+        #top_menu li a:link{
+            color: #456E2A;
+            text-decoration: none;
+        }
+        #top_menu li a:visited{
+            color: #FF8E8E;
+        }
+
+        #main{
+            margin: 50px 100px;
+            clear: both;
+        }
+        #main::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        #leftcolumn{
+            float: left;
+            width: 45%;
+            padding-top: 70px;
+        }
+        #rightcolumn{
+            float: left;
+            width: 55%;
+        }
+        #rightcolumn h1{
+            text-align: center;
+            color: #456E2A;
+        }
+        #rightcolumn h3{
+            text-align: center;
+            color: #FF8E8E;
+        }
+        #rightcolumn li{
+            padding: 10px 0;
+        }
+        .card{
+            float: left;
+            text-align: center;
+            margin: 90px 30px;
+            height: 500px;
+            border-bottom: solid 3px #FF8E8E;
+        }
+        .card h2{
+            color: #456E2A;
+        }
+
+        .line{
+            height: 30px;
+            border-bottom: solid 3px #FF8E8E;
+        }
+
+        .clear{
+            clear: left;
+        }
+        
+        #footer{
+            border-top: solid 5px #cccccc;
+            clear: both;
+            padding: 10px;
+            text-align: center;
+        }
+        @media only screen and (max-width: 768px) {
+      #leftcolumn,
+      #rightcolumn {
+        float: none;
+        width: 100%;
+        margin: 0;
+      }
+    }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <a href="index.html"><img id="logo" src="img/logo.png"></a>
+        <img id="moto" src="img/moto.png">
+        <ul id="top_menu">
+            <li><a href="sub1.html">기니위키 |</a></li>
+            <li><a href="sub2.html">기니듀스 101 |</a></li>
+            <li><a href="sub3.html">기니에게 물어봐 |</a></li>
+            <li><a href="sub4.html"><b>뿌이뿌이 모루카</b> |</a></li>
+            <li><a href="sub5.html">기니운세</a></li>
+        </ul>
+    </div>
+
+    <div id="main">
+        <div id="leftcolumn">
+            <img src="img/moruka.jpg">
+        </div>
+        <div id="rightcolumn">
+            <h1>わくわく! びくびく? 大騒動!<br>
+                두근두근! 오들오들? 대소동!</h1>
+            <h3>미사토 토모키(見里朝希) 감독의 스톱모션 애니메이션</h3>
+            <ul>
+            <li>기니피그가 자동차가 된 세상의 이야기를 다룬다. 모루카는 니들펠트 인형으로 제작되었으며 배경의 사람들은 소형 미니어처 피규어로 묘사된다.</li>
+            <li>모루카는 기니피그의 일본어인 모르모트(モルモット)와 자동차를 뜻하는 카(Car)와 합친 단어로 평소에 자동차로서 사용되지만 생물이기도 하다</li>
+            <li>울음소리는 미사토 감독이 실제로 키우는 기니피그 ‘츠무기’의 목소리를 녹음해서 사용한다.</li>
+            <li>바퀴가 달려있지만 사실은 '발'이며 굴러가지 않고 4족 보행을 하듯 뽈뽈거리며 이동한다. 모루카의 귀는 사이드미러의 역할을 하며 눈은 전조등의 역할을 한다.</li> 
+        </div>
+        <div class="clear"></div>
+        <div class="line"></div>
+        <div class="card">
+            <img src="img/moruka1.png">
+            <h2>포테토</h2>
+            <p>느긋한 성격이지만<br>
+                종종 운전자의 조종을 무시할 때가 있으며<br>
+                도움이 필요한 이에게 거리낌 없기도 하다<br>
+                당근을 제일 좋아한다</p>
+        </div>
+        <div class="card">
+            <img src="img/moruka2.png">
+            <h2>시로모</h2>
+            <p>겁이 많은 모루카 중에서도 특히 겁이 많다<br>
+                마음씨 좋은 운전자에게 응석을 부리지만<br>
+                여러 트러블에 휘말려 들 때가 많다<br>
+                테디를 누님처럼 따르고 있다<br>
+                제일 좋아하는 것은 양상추</p>
+        </div>
+        <div class="card">
+            <img src="img/moruka3.png">
+            <h2>아비</h2>
+            <p>성실하고 호기심이 왕성하다<br>
+                초보자 운전 마크를 달고 있지만<br>
+                언젠가 초보 운전을 졸업하길 꿈꾼다<br>
+                고양이를 싫어한다.</p>
+        </div>
+        <div class="clear"></div>
+        <div class="card">
+            <img src="img/moruka4.png">
+            <h2>초코</h2>
+            <p>상큼하고 부드러운 성격 같지만<br>
+                의외로 힘이 세다<br>
+                깨끗한 것을 좋아하고 외모에도 신경을 쓴다<br>
+               언젠가 No.1 고급 모루카가 되는 것이 꿈</p>
+        </div>
+        <div class="card">
+            <img src="img/moruka5.png">
+            <h2>테디</h2>
+            <p>아무튼 무엇이든 잘 먹고 잘 움직인다<br>
+                말괄량이에 겁이 없다<br>
+                말썽꾸러기라서 주위의 걱정을 사고 있다</p>
+        </div>
+        <div class="card">
+            <img src="img/moruka6.png">
+            <h2>로즈</h2>
+            <p>몸치장에 매우 공을 들인다<br>
+                예전에 아비가 고양이를<br>
+                구하는 모습을 보고 관심이 생겼다</p>
+        </div>
+    </div>
+
+    <div id="footer">
+        제작자: 202235238 김지현
+    </div>
+</body>
+</html>

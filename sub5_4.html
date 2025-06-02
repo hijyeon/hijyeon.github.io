@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sub4</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: "맑은 고딕";
+            font-size: 100%;
+            color: #666666;
+            padding: 30px 100px;
+        }
+        ul{
+            list-style-type: none;
+        }
+        #header{
+            height: 120px;
+            padding-bottom: 20px;
+            border-bottom: solid 5px #cccccc;
+        }
+        #logo{
+            float: left;
+        }
+        #moto{
+            float: left;
+            margin-top: 25px;
+        }
+        #top_menu{
+            float: right;
+            margin-top: 50px;
+        }
+        #top_menu li{
+            display: inline;
+        }
+        #top_menu li a:link{
+            color: #456E2A;
+            text-decoration: none;
+        }
+        #top_menu li a:visited{
+            color: #FF8E8E;
+        }
+
+        #main{
+            margin: 50px 100px;
+            clear: both;
+        }
+        #main::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        #maincard{
+            margin: 0 300px;
+            width: 500px;
+            height: 530px;
+            border: solid 3px #FF8E8E;
+            text-align: center;
+            padding: 50px 0;
+        }
+        #maincard p{
+            padding: 15px 10px;
+        }
+        #maincard h2{
+            color: #456E2A;
+        }
+        
+        .card_l{
+            width: 100px;
+            height: 300px;
+            margin: 0 0 0 300px;
+            text-align: center;
+            padding-top: 150px;
+            border-left: solid 3px #FF8E8E;
+            border-bottom: solid 3px #FF8E8E;
+            float: left;
+        }
+        .card{
+            width: 100px;
+            height: 300px;
+            margin: 0;
+            text-align: center;
+            padding-top: 150px;
+            border-left: solid 3px #FF8E8E;
+            border-bottom: solid 3px #FF8E8E;
+            float: left;
+        }
+        .card_r{
+            width: 100px;
+            height: 300px;
+            margin: 0;
+            text-align: center;
+            padding-top: 150px;
+            border-left: solid 3px #FF8E8E;
+            border-bottom: solid 3px #FF8E8E;
+            border-right: solid 3px #FF8E8E;
+            float: left;
+        }
+
+        
+
+        .clear{
+            clear: left;
+        }
+        
+        #footer{
+            border-top: solid 5px #cccccc;
+            clear: both;
+            padding: 10px;
+            text-align: center;
+        }
+        @media only screen and (max-width: 768px) {
+      #leftcolumn,
+      #rightcolumn {
+        float: none;
+        width: 100%;
+        margin: 0;
+      }
+    }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <a href="index.html"><img id="logo" src="img/logo.png"></a>
+        <img id="moto" src="img/moto.png">
+        <ul id="top_menu">
+            <li><a href="sub1.html">기니위키 |</a></li>
+            <li><a href="sub2.html">기니듀스 101 |</a></li>
+            <li><a href="sub3.html">기니에게 물어봐 |</a></li>
+            <li><a href="sub4.html">뿌이뿌이 모루카 |</a></li>
+            <li><a href="sub5.html"><b>기니운세</b></a></li>
+        </ul>
+    </div>
+
+    <div id="main">
+        <div id="maincard">
+            <img src="img/sub5_4.png">
+            <p>평상시부터 정답게 지내왔던 사람들 덕분에 주변 사람들에게 당신에 대한 좋은 면이 부각되고 있네요.<br>
+                이런 상황일수록 보다 겸손 하려는 노력과 마음 씀씀이를 넓게 가지려고 한다면 머지 않아 지금보다 한 단계 성숙된 자신을 갖출 수 있을 것입니다.<br>
+                주변의 어려운 사람을 위로 하고, 따뜻하게 다독여주도록 신경을 써보세요. </p>
+                <h2>행운의 아이템: 비누</h2>
+        </div>
+        <div class="card_l">
+            <a href="sub5_1.html"><img src="img/sub5_1.png"></a>
+        </div>
+        <div class="card">
+            <a href="sub5_2.html"><img src="img/sub5_2.png"></a>
+        </div>
+        <div class="card">
+            <a href="sub5_3.html"><img src="img/sub5_3.png"></a>
+        </div>
+        <div class="card">
+            <img src="img/dot.png">
+        </div>
+        <div class="card_r">
+            <a href="sub5_5.html"><img src="img/sub5_5.png"></a>
+        </div>
+    </div>
+
+    <div id="footer">
+        제작자: 202235238 김지현
+    </div>
+</body>
+</html>
