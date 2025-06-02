@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sub2</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: "맑은 고딕";
+            font-size: 100%;
+            color: #666666;
+            padding: 30px 100px;
+        }
+        ul{
+            list-style-type: none;
+        }
+        #header{
+            height: 120px;
+            padding-bottom: 20px;
+            border-bottom: solid 5px #cccccc;
+        }
+        #logo{
+            float: left;
+        }
+        #moto{
+            float: left;
+            margin-top: 25px;
+        }
+        #top_menu{
+            float: right;
+            margin-top: 50px;
+        }
+        #top_menu li{
+            display: inline;
+        }
+        #top_menu li a:link{
+            color: #456E2A;
+            text-decoration: none;
+        }
+        #top_menu li a:visited{
+            color: #FF8E8E;
+        }
+
+        #main{
+            margin: 50px 100px;
+            clear: both;
+        }
+        #main::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        #leftcolumn{
+            float: left;
+            width: 35%;
+        }
+        #rightcolumn{
+            float: left;
+            width: 65%;
+        }
+        .card{
+            float: left;
+        }
+        .card h2{
+            color: #456E2A;
+        }
+        .card li{
+            padding-bottom: 10px;
+        }
+        .line{
+            border-top: solid 3px #FF8E8E;
+        }
+        
+        #footer{
+            border-top: solid 5px #cccccc;
+            clear: both;
+            padding: 10px;
+            text-align: center;
+        }
+        @media only screen and (max-width: 768px) {
+      #leftcolumn,
+      #rightcolumn {
+        float: none;
+        width: 100%;
+        margin: 0;
+      }
+    }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <a href="index.html"><img id="logo" src="img/logo.png"></a>
+        <img id="moto" src="img/moto.png">
+        <ul id="top_menu">
+            <li><a href="sub1.html"><b>기니위키</b> |</a></li>
+            <li><a href="sub2.html">기니듀스 101 |</a></li>
+            <li><a href="sub3.html">기니에게 물어봐 |</a></li>
+            <li><a href="sub4.html">뿌이뿌이 모루카 |</a></li>
+            <li><a href="sub5.html">기니운세</a></li>
+        </ul>
+    </div>
+
+    <div id="main">
+        <div id="leftcolumn">
+            <div class="card">
+                <img src="img/guinea.png">
+                <audio src="img/sqeaking.mp4" controls></audio>
+            </div>
+        </div>
+        <div id="rightcolumn">
+            <div class="card">
+                <h2><img src="img/dot.png">학명</h2>
+                <ul>
+                    <li>Cavia porcellus</li>
+                </ul>
+                <div class="line"></div>
+                <h2><img src="img/dot.png">분류</h2>
+                <ul>
+                    <li>계: 동물계(Animalia)</li>
+                    <li>문: 척삭동물문(Chordata)</li>
+                    <li>강: 포유강(Mammalia)</li>
+                    <li>목: 설치목(Rodentia)</li>
+                    <li>과: 천축서과(Caviidae)</li>
+                    <li>속: 기니피그속(Cavia)</li>
+                    <li>종: 기니피그(C. porcellus)</li>
+                </ul>
+                <div class="line"></div>
+            </div>
+            <div class="card">
+                <h2><img src="img/dot.png">특징</h2>
+                <ul>
+                    <li>남아메리카 안데스 지역의 아메리카 원주민들이 브라질기니피그, 아마존기니피그, 산지기니피그 중 한 종을 길들여 가축화한 것이 기원이다.</li>
+                    <li>6개월 정도가 지나면 다 성장하며 성체는 평균 체중이 700~1,200g이나, 3kg이 나가는 대형 품종도 존재한다.</li>
+                    <li>거리 감각이 약하고 색맹이지만 시야각은 약 340도 정도로 넓다.</li>
+                    <li>청각, 후각, 촉각이 잘 발달되어있다.</li>
+                    <li>수명은 4~5년이며, 오래 살면 8년까지도 산다.</li>
+                    <li>엉덩이 부분에 냄새샘이 있으며 엉덩이를 끌고 다니는 행동으로 냄새를 묻혀 영역을 표시한다.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        제작자: 202235238 김지현
+    </div>
+</body>
+</html>

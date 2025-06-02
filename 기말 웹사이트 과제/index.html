@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: "맑은 고딕";
+            font-size: 100%;
+            color: #666666;
+            padding: 30px 100px;
+        }
+        ul{
+            list-style-type: none;
+        }
+
+        #header{
+            height: 120px;
+            padding-bottom: 20px;
+            border-bottom: solid 5px #cccccc;
+        }
+        #logo{
+            float: left;
+        }
+        #moto{
+            float: left;
+            margin-top: 25px;
+        }
+        #top_menu{
+            float: right;
+            margin-top: 50px;
+        }
+        #top_menu li{
+            display: inline;
+        }
+        #top_menu li a:link{
+            color: #456E2A;
+            text-decoration: none;
+        }
+        #top_menu li a:visited{
+            color: #FF8E8E;
+        }
+
+        #main{
+            margin: 100px 100px;
+            clear: both;
+        }
+        #main::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        #column{
+            padding: 0 30px;
+        }
+        #column img{
+            float: left;
+            padding-right: 20px;
+        }
+        #card{
+            float: left;
+            width: 280px;
+            border: dotted 5px #456E2A;
+            margin: 30px 0 0 20px;
+        }
+        #card h2{
+            text-align: center;
+        }
+        #card li{
+            list-style-image: url("img/dot.png");
+            padding: 5px;
+        }
+        #card li span{
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: underline;
+            color: #FF8E8E;
+        }
+        #sub_column{
+            padding-top: 80px;
+            clear: both;
+        }
+        #sub_column img{
+            padding-left: 10px;
+        }
+
+        #footer{
+            border-top: solid 5px #cccccc;
+            clear: both;
+            padding: 10px;
+            text-align: center;
+        }
+
+            @media only screen and (max-width: 768px) {
+      #leftcolumn,
+      #rightcolumn {
+        float: none;
+        width: 100%;
+        margin: 0;
+      }
+    }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <img id="logo" src="img/logo.png">
+        <img id="moto" src="img/moto.png">
+        <ul id="top_menu">
+            <li><a href="sub1.html">기니위키 |</a></li>
+            <li><a href="sub2.html">기니듀스 101 |</a></li>
+            <li><a href="sub3.html">기니에게 물어봐 |</a></li>
+            <li><a href="sub4.html">뿌이뿌이 모루카 |</a></li>
+            <li><a href="sub5.html">기니운세</a></li>
+        </ul>
+    </div>
+
+    <div id="main">
+        <div id="column">
+            <img src="img/main.png">
+            <img src="img/main_img.png">
+            <div id="card">
+                <h2>기니피그의 효능</h2>
+                <ul>
+                    <li><span>당뇨예방</span><br>
+                        보는 것만으로도 혈당감소!</li>
+                    <li><span>다이어트효과</span><br>
+                        쓰다듬기 1회에 200kcal 소모!</li>
+                    <li><span>독심술</span><br>
+                        눈을 마주치면 모든 걸<br>
+                        간파당할 수 있다!</li>
+                </ul>
+            </div>  
+        </div>
+        <div id="sub_column">
+            <a href="sub1.html"><img src="img/sub1.png"></a>
+            <a href="sub2.html"><img src="img/sub2.png"></a>
+            <a href="sub3.html"><img src="img/sub3.png"></a>
+            <a href="sub4.html"><img src="img/sub4.png"></a>
+            <a href="sub5.html"><img src="img/sub5.png"></a>
+        </div>
+    </div>
+
+    <div id="footer">
+        제작자: 202235238 김지현
+    </div>
+</body>
+</html>
